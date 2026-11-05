@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ugcmarkets
+    runtime: static
+    buildCommand: ""
+    staticPublishPath: .

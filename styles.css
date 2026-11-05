@@ -1,0 +1,146 @@
+/* UGC Markets — influUGC main brand identity (owner order, Nov 5, 2026):
+   black background, neon lime #C8FF00 accent, bold influUGC typographic feel.
+   UGC Markets is the service-providers marketplace brand of influUGC,
+   skinned 100% in the main identity. Design system shared with the network
+   satellites (prinfluencer.net), adapted with a category-chip component. */
+
+:root{
+  --black:#000000;
+  --panel:#0d0d0d;
+  --panel-2:#141414;
+  --ink:#f4f4f4;
+  --ink-soft:#a9a9a9;
+  --lime:#C8FF00;
+  --lime-dark:#a8d900;
+  --line:#262626;
+  --sans:"Segoe UI",Tahoma,Arial,"Noto Kufi Arabic",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--black);color:var(--ink);font-family:var(--sans);line-height:1.75;font-size:17px}
+a{color:var(--lime);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{line-height:1.3;font-weight:800}
+
+/* ---------- header ---------- */
+.site-header{position:sticky;top:0;z-index:60;background:rgba(0,0,0,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.header-in{max-width:1120px;margin:0 auto;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.brand{color:var(--ink);display:flex;flex-direction:column;line-height:1.15}
+.brand:hover{text-decoration:none}
+.wordmark{font-size:1.45rem;font-weight:900;letter-spacing:.02em;text-transform:uppercase}
+.wordmark b{color:var(--lime);font-weight:900}
+.wordmark i{color:var(--lime);font-style:normal}
+.brand small{color:var(--ink-soft);font-size:.74rem;font-weight:600}
+.brand small b{color:var(--lime);font-weight:700}
+.site-nav{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.site-nav a{color:var(--ink);font-weight:600;font-size:.95rem}
+.site-nav a:hover{color:var(--lime);text-decoration:none}
+.nav-cta{border:2px solid var(--lime);color:var(--lime)!important;padding:7px 16px;border-radius:999px;font-weight:800}
+.nav-cta:hover{background:var(--lime);color:#000!important}
+.lang-switch{font-size:.85rem;font-weight:700;border:1px solid var(--line);padding:5px 13px;border-radius:999px;color:var(--ink-soft)!important}
+.lang-switch:hover{border-color:var(--lime);color:var(--lime)!important}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 46px;border-bottom:1px solid var(--line);background:radial-gradient(60% 90% at 85% 0%,rgba(200,255,0,.09),transparent 60%)}
+[dir="rtl"] .hero{background:radial-gradient(60% 90% at 15% 0%,rgba(200,255,0,.09),transparent 60%)}
+.kicker{color:var(--lime);font-weight:800;font-size:.85rem;text-transform:uppercase;letter-spacing:.12em}
+[dir="rtl"] .kicker{letter-spacing:0}
+.hero h1{font-size:clamp(2.1rem,5.4vw,3.5rem);margin:14px 0 16px}
+.hero h1 em{color:var(--lime);font-style:normal}
+.hero .lede{font-size:1.15rem;color:var(--ink-soft);max-width:44em}
+.cta-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:13px 28px;font-weight:800;font-size:1rem;border:2px solid var(--lime);border-radius:999px;transition:.15s}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-primary{background:var(--lime);color:#000}
+.btn-primary:hover{background:var(--lime-dark);border-color:var(--lime-dark)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:#3d3d3d}
+.btn-ghost:hover{border-color:var(--lime);color:var(--lime)}
+.byline{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-size:.87rem;color:var(--ink-soft);display:flex;gap:8px 22px;flex-wrap:wrap}
+.byline b{color:var(--ink)}
+
+/* ---------- proof strip ---------- */
+.proof{border-bottom:1px solid var(--line);padding:20px 0;background:var(--panel)}
+.proof .wrap{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.proof-label{font-size:.8rem;font-weight:800;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap}
+.proof-names{list-style:none;display:flex;gap:8px 22px;flex-wrap:wrap;font-size:1.05rem;font-weight:700}
+.proof-names li::before{content:"·";color:var(--lime);margin-inline-end:8px}
+
+/* ---------- sections ---------- */
+.section{padding:54px 0;border-bottom:1px solid var(--line)}
+.sec-head{max-width:46em;margin-bottom:30px}
+.sec-tag{color:var(--lime);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em}
+[dir="rtl"] .sec-tag{letter-spacing:0}
+.sec-head h2,.section>h2{font-size:clamp(1.6rem,3.6vw,2.3rem);margin:8px 0 10px}
+.sec-head p{color:var(--ink-soft)}
+
+/* services */
+.svc-list{border-top:2px solid var(--lime)}
+.svc-row{display:grid;grid-template-columns:64px 1fr;gap:6px 20px;padding:22px 4px;border-bottom:1px solid var(--line)}
+.svc-num{font-size:1.5rem;color:var(--lime);font-weight:900}
+.svc-row h3{font-size:1.25rem}
+.svc-row p{color:var(--ink-soft);margin-top:4px}
+.svc-deliv{font-size:.9rem;color:var(--ink)!important;margin-top:8px}
+.svc-deliv::before{content:"— "}
+
+/* category chips (marketplace service categories) */
+.cat-chips{list-style:none;display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.cat-chips li{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.92rem;color:var(--ink);background:var(--panel)}
+.cat-chips li b{color:var(--lime);font-weight:800}
+
+/* why */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+@media(max-width:760px){.cols{grid-template-columns:1fr}}
+.pull{font-size:1.4rem;line-height:1.6;font-weight:700;border-inline-start:4px solid var(--lime);padding-inline-start:18px}
+.pull a{white-space:nowrap}
+.facts{list-style:none}
+.facts li{padding:11px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:14px}
+.facts li b{color:var(--lime)}
+.facts li span{color:var(--ink-soft)}
+
+/* process */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.steps li{padding:20px;background:var(--panel);border-inline-end:1px solid var(--line)}
+.steps li:last-child{border-inline-end:0}
+@media(max-width:760px){.steps li{border-inline-end:0;border-bottom:1px solid var(--line)}}
+.steps .n{font-size:2rem;color:var(--lime);font-weight:900;line-height:1}
+.steps h3{margin:8px 0 6px;font-size:1.1rem}
+.steps p{color:var(--ink-soft);font-size:.95rem}
+
+/* FAQ — answer first */
+.faq{border-top:2px solid var(--lime)}
+.faq-item{padding:20px 4px;border-bottom:1px solid var(--line)}
+.faq-item h3{font-size:1.13rem}
+.faq-item h3::before{content:"س: ";color:var(--lime)}
+[dir="ltr"] .faq-item h3::before{content:"Q: "}
+.faq-item p{color:var(--ink-soft);margin-top:6px;max-width:52em}
+.faq-item p b{color:var(--ink)}
+
+/* CTA band */
+.cta-band{background:var(--panel);border-bottom:1px solid var(--line);padding:54px 0}
+.cta-band h2{font-size:clamp(1.6rem,3.6vw,2.3rem)}
+.cta-band h2 em{color:var(--lime);font-style:normal}
+.cta-band p{color:var(--ink-soft);max-width:44em;margin-top:8px}
+.contact-lines{list-style:none;margin-top:20px;display:grid;gap:8px}
+
+/* ---------- footer ---------- */
+.site-footer{padding:40px 0 30px;background:#050505}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px;max-width:1120px;margin:0 auto;padding:0 22px}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr}}
+.site-footer h4{margin-bottom:10px;color:var(--lime)}
+.site-footer nav{display:grid;gap:7px;align-content:start}
+.site-footer nav a{color:var(--ink)}
+.footer-note{color:var(--ink-soft);font-size:.94rem;max-width:30em;margin-top:8px}
+.footer-legal{max-width:1120px;margin:28px auto 0;padding:14px 22px 0;border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-soft);text-align:center}
+.footer-giant{font-weight:900;text-transform:uppercase;text-align:center;font-size:clamp(2.6rem,9.5vw,6.5rem);line-height:1.05;color:transparent;-webkit-text-stroke:1px #2c2c2c;margin-top:12px;user-select:none}
+.footer-giant b{color:transparent;-webkit-text-stroke:1px var(--lime)}
+
+/* mobile action bar */
+.mobile-bar{display:none}
+@media(max-width:640px){
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:50;box-shadow:0 -2px 14px rgba(0,0,0,.6)}
+  .mobile-bar a{flex:1;text-align:center;padding:13px 6px;font-weight:800}
+  .mb-book{background:var(--lime);color:#000}
+  .mb-wa{background:var(--panel-2);color:var(--lime);border-top:1px solid var(--line)}
+  body{padding-bottom:48px}
+}
