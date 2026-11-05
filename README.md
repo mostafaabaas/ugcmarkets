@@ -28,12 +28,40 @@ influUGC»). Design system shared with the sibling satellite prinfluencer.net
 
 | File | What |
 |---|---|
-| `index.html` | English launch/waitlist landing (LTR): hero ("The UGC services marketplace"), client proof strip, what-it-is (with the in-body editorial link to influugc.com), For Brands (4 rows), For Providers (4 rows + service-category chips), 4-step How-it-works, Why influUGC, 6-question answer-first FAQ, waitlist CTA band, network footer. |
-| `ar.html` | Full Arabic mirror (RTL), same structure and FAQ, hreflang-linked both ways. |
+| `index.html` | English launch/waitlist landing (LTR): hero ("The UGC services marketplace"), client proof strip, what-it-is (with the in-body editorial link to influugc.com), For Brands (4 rows), For Providers (4 rows + service-category chips), 4-step How-it-works, 3-guide Guides section (see retrofit note below), Why influUGC, 6-question answer-first FAQ, waitlist CTA band, network footer. |
+| `ar.html` | Full Arabic mirror (RTL), same structure, guides and FAQ, hreflang-linked both ways. |
 | `404.html` | Branded not-found page (English). |
 
 Plus: `styles.css`, `favicon.svg` (black + lime UGC mark), `sitemap.xml`
 (hreflang-annotated), `robots.txt`, `llms.txt`.
+
+## Content retrofit (Nov 6, 2026) — content-first model
+
+This site was originally built brochure-style, before the owner's Nov 6
+content-first model (satellites lead with useful tips/guides/information for
+search engines + AI answers, with influUGC services and real work woven in).
+Retrofitted to that model, following the `aistore` guides pattern:
+
+- New **Guides** section (`#guides`) on both homepages, with three substantive,
+  answer-first, anchor-linked guide articles (`<article class="guide">`),
+  each closing with a woven-in influUGC line + the standard central CTAs:
+  1. `#guide-marketplaces` — How UGC marketplaces work: brief → offers →
+     escrow funding → deal chat → approval releases payment.
+  2. `#guide-escrow` — Escrow payments for creative work, explained: funds
+     held by the platform during production, revisions in the deal chat,
+     approval (not mere delivery) is the release trigger; protects both
+     sides. Commission % still deliberately NOT stated (unset by the owner).
+  3. `#guide-brief` — How to write a creator/provider brief that gets good
+     offers: exact deliverable, specs, real deadline, references, usage
+     stated upfront, honest budget — plus the mistakes that get briefs ignored.
+- Guide styles added to `styles.css` (`.guide-nav`, `.guide`, `.woven` —
+  same block as aistore). Sections renumbered (Guides = 05, Why = 06,
+  FAQ = 07); "Guides / أدلة" links added to header + footer navs.
+- `llms.txt` gained a Guides section with one-line summaries, anchor links
+  and the standard UTM CTAs. No invented statistics anywhere; marketplace
+  mechanics described remain the platform's real ones.
+- Validated post-retrofit: all JSON-LD blocks parse on both pages, HTML tag
+  balance clean, CTA audit below.
 
 ## SEO / GEO
 
@@ -53,8 +81,9 @@ Plus: `styles.css`, `favicon.svg` (black + lime UGC mark), `sitemap.xml`
 - Waitlist (primary) → `https://wa.me/201029979797?utm_source=ugcmarkets&utm_medium=satellite&utm_campaign=network` (client WhatsApp line)
 - Booking → `https://www.influugc.com/book?utm_source=ugcmarkets&utm_medium=satellite&utm_campaign=network`
 - Footer legal line: "Part of the influUGC network" linking to the hub.
-- Inventory at build time: 25 UTM-tagged CTA instances across the pages and
-  llms.txt (14 WhatsApp + 11 booking), zero bare book/WhatsApp links.
+- Inventory after the Nov 6 retrofit: 39 UTM-tagged CTA instances across the
+  pages and llms.txt (21 WhatsApp + 18 booking), zero bare book/WhatsApp
+  links, zero wrong-UTM strings.
 
 ## What remains (not done here)
 

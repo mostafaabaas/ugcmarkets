@@ -107,6 +107,23 @@ h1,h2,h3{line-height:1.3;font-weight:800}
 .steps h3{margin:8px 0 6px;font-size:1.1rem}
 .steps p{color:var(--ink-soft);font-size:.95rem}
 
+/* guides — content-first blocks */
+.guide-nav{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.guide-nav a{border:1px solid var(--line);border-radius:999px;padding:7px 15px;color:var(--ink);font-weight:700;font-size:.9rem}
+.guide-nav a:hover{border-color:var(--lime);color:var(--lime);text-decoration:none}
+.guide{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:26px;margin-bottom:20px;scroll-margin-top:90px}
+.guide .g-tag{color:var(--lime);font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}
+[dir="rtl"] .guide .g-tag{letter-spacing:0}
+.guide h3{font-size:1.35rem;margin:6px 0 10px}
+.guide h4{font-size:1.05rem;margin:16px 0 4px;color:var(--ink)}
+.guide p{color:var(--ink-soft);margin-top:6px}
+.guide p b,.guide li b{color:var(--ink)}
+.guide ul{list-style:none;margin-top:8px;display:grid;gap:7px}
+.guide ul li{color:var(--ink-soft);padding-inline-start:18px;position:relative}
+.guide ul li::before{content:"—";color:var(--lime);position:absolute;inset-inline-start:0}
+.guide .woven{margin-top:16px;padding-top:13px;border-top:1px dashed var(--line);color:var(--ink)}
+.guide .woven a{font-weight:800;white-space:nowrap}
+
 /* FAQ — answer first */
 .faq{border-top:2px solid var(--lime)}
 .faq-item{padding:20px 4px;border-bottom:1px solid var(--line)}
