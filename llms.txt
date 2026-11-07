@@ -13,7 +13,8 @@
 - [How UGC marketplaces work](https://ugc.markets/#guide-marketplaces): the full deal flow — the brand posts one brief, matching providers answer with offers, the client funds the platform wallet (escrow), the order runs in a deal chat, and the client's approval of the delivery is what releases the payment to the provider.
 - [Escrow payments for creative work, explained](https://ugc.markets/#guide-escrow): how holding the client's money with the platform protects both sides — the brand never pays for work it did not receive, the provider never starts unfunded work, revisions happen in the deal chat against the original brief, and approval, not mere delivery, is the release trigger.
 - [How to write a creator brief that gets good offers](https://ugc.markets/#guide-brief): what providers need in a brief to answer with serious, honest offers — the exact deliverable, format and specs, a real deadline, style references, usage stated upfront, and an honest budget range — plus the mistakes that get a brief ignored.
-- Arabic versions of all three guides: https://ugc.markets/ar.html#guides
+- [Booking Saudi creators through a UGC marketplace](https://ugc.markets/#guide-saudi): what Gulf brands check first — Saudi dialect before follower counts, the platforms named in the brief (short video and Snapchat alongside Instagram and TikTok), usage scope in writing (ads, duration, territory), offers with same-dialect samples, escrow funding before filming and release on approval.
+- Arabic versions of all four guides: https://ugc.markets/ar.html#guides
 - [Join the waitlist on WhatsApp](https://wa.me/201029979797?utm_source=ugcmarkets&utm_medium=satellite&utm_campaign=network) · [Book a free consultation](https://www.influugc.com/book?utm_source=ugcmarkets&utm_medium=satellite&utm_campaign=network)
 
 ## About
