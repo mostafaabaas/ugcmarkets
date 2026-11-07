@@ -182,3 +182,9 @@ html[lang="ar"] .cta-band h2{line-height:1.45}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.cards,.guide-cards{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}.site-nav a:not(.nav-cta):not(.lang-switch){display:none}}
 @media (max-width:640px){body{font-size:16px}.sec{padding:56px 0}.hero{padding:40px 0 56px}.hero-panel{padding:28px 24px}.visual-panel{padding:24px}.cards,.cards.cols-2,.cards.cols-4,.guide-cards,.steps,.steps.cols-5{grid-template-columns:1fr}.guide-panel{padding:28px 24px}.cta-band{padding:36px 24px}.side-panel{padding:24px}.mobile-bar{display:flex}body{padding-bottom:72px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* works materials (content wave 2026-11-07) */
+.works-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.work-item{margin:0}
+.work-item video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--radius,16px);border:1px solid var(--line,rgba(127,127,127,.25));background:#000;display:block}
+.work-item figcaption{margin-top:8px;font-size:14px;opacity:.85}
