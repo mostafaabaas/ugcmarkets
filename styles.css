@@ -133,6 +133,8 @@ html[lang="ar"] .g-card p{line-height:1.8}
 .guide-panel .cat{font-size:12px;font-weight:700;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
 html[lang="ar"] .guide-panel .cat{letter-spacing:0}
 .guide-panel h3{font-family:var(--font-display);font-size:24px;font-weight:800;margin:10px 0 14px;line-height:1.4}
+.guide-panel h4{font-family:var(--font-display);font-size:17px;font-weight:700;margin:20px 0 6px;color:var(--ink);line-height:1.5}
+.guide-panel .guide-date{font-size:13px;opacity:.75}
 .guide-panel p{color:var(--mut);font-size:16px;max-width:72ch}
 .guide-panel p+p{margin-top:12px}
 .guide-panel ul{list-style:none;display:grid;gap:10px;margin-top:16px}
